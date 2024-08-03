@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "FB emeticons killer",
+  "description": "Removes spans containing images pointing to FB emoji URLs",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/emoji-substitution",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/killer48.png",
+    "96": "icons/killer96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["killer.js"]
+    }
+  ]
+}
